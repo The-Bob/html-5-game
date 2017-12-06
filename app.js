@@ -1,13 +1,14 @@
 var express = require('express');
 var app = express();
 var serv = require('http').Server(app);
+var port = process.env.PORT || 2000;
 
 app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/client/index.html');
 });
 app.use('/client', express.static(__dirname + '/client'));
 
-serv.listen(2000);
+serv.listen(port);
 console.log('Server started');
 
 var SOCKET_LIST = [];
