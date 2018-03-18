@@ -1,3 +1,14 @@
 #ctx {
 	border: 1px solid #000;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#chat {
+	border: 1px dashed #000;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	overflow-y: scroll;
 }

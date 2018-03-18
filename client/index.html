@@ -2,13 +2,21 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>This is a "game"</title>
 		<link rel="stylesheet" href="/client/styles/style.css" type='text/css'/>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
 	</head>
 	<body>
 		<canvas id='ctx' 	width='500' height='500'></canvas>
+		<div id="chat">
+			<div id="chatBox">
+				<div class="chatText">I am TEXT!</div>
+			</div>
 
+			<form id="chatForm">
+				<input id="chatInput" type="text"></input>
+			</form>
+		</div>
 		<script src="/client/js/client.js"></script>
 	</body>
 </html>
